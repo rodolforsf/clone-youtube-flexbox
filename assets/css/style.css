@@ -1,0 +1,272 @@
+/* Define o layout da página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header, main, footer {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,.12); */
+  }
+  
+  /* .logo  {
+    margin: 0;
+  }
+   */
+  form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f00;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo do conteúdo principal */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  
+  .video {
+    flex: 1 1 300px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    width: 50%;
+    height: 35%;
+  }
+
+  .video .interacao {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    /* background-color: #f00; */
+  }
+
+  .video .interacao img{
+    margin-top: 4px;
+    height: 42px;
+    width: 42px;
+  }
+
+  .video .interacao p{
+    color: #515151;
+    text-align: start;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+    line-height: 16px;
+  }
+
+  .video .interacao p strong{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 7px;
+  }
+  .video .interacao button{
+    background-color: #030303;;
+    color: #ffffff;
+    margin-right: 24px;
+    margin-left: 24px;
+    /* text-transform: capitalize; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    /* padding: 12px 35px; */
+    height: 36px;
+    width: 110px;
+    border-radius: 15px;
+  }
+
+  .interacao .avaliacao{
+    align-items: center;
+    display: flex;
+    margin-left: 15%;
+    width: 420px;
+    padding: 30px;
+
+  }
+
+  .interacao .avaliacao  img{
+    height: 20px;
+    width: 20px;
+  }
+/* 
+  .interacao .avaliacao:nth-last-child(2){
+    margin-left: 42px;
+    background-color: aqua;
+  }
+
+  .interacao .avaliacao:nth-last-child(4){
+    margin-left: 42px;
+    background-color: aqua;
+  } */
+
+
+
+  .interacao .avaliacao  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+  }
+
+  .interacao #ncurtiu{
+    margin-left: 42px;
+  }
+
+  .interacao #compartilhar{
+    margin-left: 42px;
+  }
+
+  .interacao #salvar{
+    margin-left: 42px;
+  }
+
+  .interacao #mais{
+    margin-left: 42px;
+  }
+
+ .video .info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+ }
+
+ .video .descricao {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #515151;
+    width: 65%;
+ }
+
+  .miniaturas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .miniatura{
+    display: flex;
+    /* flex: 3 3 100px; */
+
+    margin: 10px 10px 16px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    width: 160px;
+    height: 90px;
+ 
+
+  }
+
+  .miniatura img {
+    margin-right: 16px;
+  }
+
+  .miniatura h2{
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      
+      width: 196px;
+      height: 32px;
+  }
+
+
+.miniatura .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.miniatura .text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+
+  .video img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video h2 {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .video p {
+    font-size: 14px;
+    margin: 10px;
+    color: #777;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+  }
+  
